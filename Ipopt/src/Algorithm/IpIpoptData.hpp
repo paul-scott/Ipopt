@@ -484,6 +484,12 @@ namespace Ipopt
       return timing_statistics_;
     }
 
+    /** Resetting CPU Start Time */
+    void ResetCpuStartTime()
+    {
+      cpu_time_start_ = CpuTime();
+    }
+
     /** Check if additional data has been set */
     bool HaveAddData()
     {
